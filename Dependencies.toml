@@ -407,110 +407,17 @@ modules = [
 
 [[package]]
 org = "ballerinax"
-name = "ai.azure"
-version = "1.6.0"
-dependencies = [
-	{org = "ballerina", name = "ai"},
-	{org = "ballerina", name = "constraint"},
-	{org = "ballerina", name = "data.jsondata"},
-	{org = "ballerina", name = "file"},
-	{org = "ballerina", name = "http"},
-	{org = "ballerina", name = "io"},
-	{org = "ballerina", name = "jballerina.java"},
-	{org = "ballerina", name = "lang.array"},
-	{org = "ballerina", name = "lang.regexp"},
-	{org = "ballerina", name = "lang.runtime"},
-	{org = "ballerina", name = "log"},
-	{org = "ballerina", name = "observe"},
-	{org = "ballerina", name = "os"},
-	{org = "ballerina", name = "time"},
-	{org = "ballerina", name = "uuid"},
-	{org = "ballerinax", name = "azure.ai.search"},
-	{org = "ballerinax", name = "azure.ai.search.index"},
-	{org = "ballerinax", name = "azure.openai.chat"},
-	{org = "ballerinax", name = "azure.openai.embeddings"},
-	{org = "ballerinax", name = "azure.openai.responses"}
-]
-modules = [
-	{org = "ballerinax", packageName = "ai.azure", moduleName = "ai.azure"},
-	{org = "ballerinax", packageName = "ai.azure", moduleName = "ai.azure.identity"}
-]
-
-[[package]]
-org = "ballerinax"
 name = "amp"
-version = "1.1.0"
+version = "1.2.0"
 dependencies = [
+	{org = "ballerina", name = "data.jsondata"},
+	{org = "ballerina", name = "http"},
 	{org = "ballerina", name = "io"},
 	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "observe"}
 ]
 modules = [
 	{org = "ballerinax", packageName = "amp", moduleName = "amp"}
-]
-
-[[package]]
-org = "ballerinax"
-name = "azure.ai.search"
-version = "1.0.2"
-dependencies = [
-	{org = "ballerina", name = "data.jsondata"},
-	{org = "ballerina", name = "http"},
-	{org = "ballerina", name = "log"},
-	{org = "ballerina", name = "url"},
-	{org = "ballerinai", name = "observe"}
-]
-
-[[package]]
-org = "ballerinax"
-name = "azure.ai.search.index"
-version = "1.0.2"
-dependencies = [
-	{org = "ballerina", name = "constraint"},
-	{org = "ballerina", name = "data.jsondata"},
-	{org = "ballerina", name = "http"},
-	{org = "ballerina", name = "log"},
-	{org = "ballerina", name = "url"},
-	{org = "ballerinai", name = "observe"}
-]
-
-[[package]]
-org = "ballerinax"
-name = "azure.openai.chat"
-version = "4.0.0"
-dependencies = [
-	{org = "ballerina", name = "constraint"},
-	{org = "ballerina", name = "data.jsondata"},
-	{org = "ballerina", name = "http"},
-	{org = "ballerina", name = "log"},
-	{org = "ballerina", name = "os"},
-	{org = "ballerina", name = "url"},
-	{org = "ballerinai", name = "observe"}
-]
-
-[[package]]
-org = "ballerinax"
-name = "azure.openai.embeddings"
-version = "1.0.3"
-dependencies = [
-	{org = "ballerina", name = "constraint"},
-	{org = "ballerina", name = "http"},
-	{org = "ballerina", name = "url"},
-	{org = "ballerinai", name = "observe"}
-]
-
-[[package]]
-org = "ballerinax"
-name = "azure.openai.responses"
-version = "1.0.0"
-dependencies = [
-	{org = "ballerina", name = "constraint"},
-	{org = "ballerina", name = "data.jsondata"},
-	{org = "ballerina", name = "http"},
-	{org = "ballerina", name = "log"},
-	{org = "ballerina", name = "os"},
-	{org = "ballerina", name = "url"},
-	{org = "ballerinai", name = "observe"}
 ]
 
 [[package]]
@@ -522,7 +429,6 @@ dependencies = [
 	{org = "ballerina", name = "http"},
 	{org = "ballerina", name = "otel"},
 	{org = "ballerinai", name = "observe"},
-	{org = "ballerinax", name = "ai.azure"},
 	{org = "ballerinax", name = "amp"}
 ]
 modules = [
