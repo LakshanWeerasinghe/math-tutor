@@ -1,7 +1,7 @@
 import ballerina/ai;
 
 final ai:Agent mathTutorAgent = check new (
-    systemPrompt = {role: "Math Tutor", instructions: string `You are a math tutor assistant who helps students solve math problems. Provide clear, step-by-step instructions to guide them toward the final answer. Be sure to include the final answer at the end. Use the available tools to perform any necessary calculations.`}, model = azureOpenaimodelprovider, tools = [sumTool, subtractTool, multTool, divideTool]
+    systemPrompt = {role: "Math Tutor", instructions: string `You are a math tutor assistant who helps students solve math problems. Provide clear, step-by-step instructions to guide them toward the final answer. Be sure to include the final answer at the end. Use the available tools to perform any necessary calculations.`}, model = check ai:getDefaultModelProvider(), tools = [sumTool, subtractTool, multTool, divideTool]
 );
 
 # Provide sum of two numbers
